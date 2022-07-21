@@ -11,7 +11,9 @@ def un_gz(file_name):
     #gzip对象用read()打开后，写入open()建立的文件里。
     g_file.close()
     #关闭gzip对象
+print(1111)
 path = os.getenv('DATA_PATH')
+print(path)
 name = os.listdir(path)
 filename = os.path.join(path, name)
 un_gz(filename)
