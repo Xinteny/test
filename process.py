@@ -14,7 +14,7 @@ def un_gz(file_name):
 print(1111)
 path = os.getenv('DATA_PATH')
 print(path)
-name = os.listdir(path)
+name = os.listdir(path)[0]
 filename = os.path.join(path, name)
 un_gz(filename)
 # print(os.getenv('DATA_PATH'))
