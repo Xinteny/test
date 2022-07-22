@@ -2,7 +2,7 @@ import os
 import gzip
 def un_gz(file_name):
     """ungz zip file"""
-    f_name = file_name.replace(".gz", "")
+    f_name = file_name.split('/')[-1].replace(".gz", "")
     print(f_name)
     #获取文件的名称，去掉
     g_file = gzip.GzipFile(file_name)
