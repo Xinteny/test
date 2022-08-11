@@ -190,6 +190,7 @@ if __name__ == '__main__':
     starttime = datetime.datetime.now()
     # file_path = 'D:/Workspace/Yunqi/data/Gaode_Satellite_Image'
     file_path = os.getenv('OUTPUT_PATH')
+    print(file_path)
     # (1) 全球地图
     # zoom = 4
     # params = [0, 0, pow(2, zoom), pow(2, zoom)]
